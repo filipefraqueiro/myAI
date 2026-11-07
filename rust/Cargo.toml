@@ -1,0 +1,29 @@
+[package]
+name = "myai"
+version = "0.1.0"
+edition = "2024"
+default-run = "myai"
+
+[features]
+cli = []
+
+[dependencies]
+md_requests = { version = "0.1.0", git = "ssh://git@github.com/filipefraqueiro/md_requests.git", branch = "main"}
+chrono = "0.4.45"
+clap = "4.6.7"
+dotenvy = "0.15.7"
+env = "1.0.1"
+futures = "0.3.34"
+pyo3 = { version = "0.29.3", features = ["auto-initialize"] }
+regex = "1.12.4"
+rustpython-parser = "0.4.0"
+rustyline = "18.0.1"
+serde = "1.0.228"
+serde_json = "1.0.150"
+tokio = { version = "1.52.3", features = ["full"] }
+tokio-cron-scheduler = "0.15.1"
+rustls = "0.23.46"
+reqwest = { version = "0.13.5", features = ["stream"] }
+anyhow = "1.0.104"
+llama-cpp-2 = "0.1.160"
+futures-util = "0.3.34"

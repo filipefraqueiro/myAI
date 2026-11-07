@@ -1,0 +1,993 @@
+{
+    "ollama": {
+        "run_model": {
+            "description": "Chat completion. POST /api/chat",
+            "url_base": "{OLLAMA_URL}",
+            "auth_key": "",
+            "auth_value": "",
+            "auth_position": "",
+            "endpoint": "/api/chat",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic {OLLAMA_BASIC_AUTH_B64}",
+                "X-API-Key": "{OLLAMA_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "format": "output_format",
+                "keep_alive": "keep_alive",
+                "options": {
+                    "num_keep": 5,
+                    "seed": 42,
+                    "num_predict": 1024,
+                    "top_k": 20,
+                    "top_p": 0.9,
+                    "min_p": 0.0,
+                    "typical_p": 0.7,
+                    "repeat_last_n": 64,
+                    "temperature": 0.8,
+                    "repeat_penalty": 1.2,
+                    "presence_penalty": 1.5,
+                    "frequency_penalty": 1.0,
+                    "penalize_newline": "False",
+                    "stop": [
+                        "user:"
+                    ],
+                    "numa": "False",
+                    "num_ctx": 8192,
+                    "num_batch": 512,
+                    "main_gpu": 0,
+                    "use_mmap": "True",
+                    "num_thread": 8
+                }
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List local models. GET /api/tags",
+            "url_base": "{OLLAMA_URL}",
+            "auth_key": "",
+            "auth_value": "",
+            "auth_position": "",
+            "endpoint": "/api/tags",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic {OLLAMA_BASIC_AUTH_B64}",
+                "X-API-Key": "{OLLAMA_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        },
+        "show_model": {
+            "description": "Model details. POST /api/show",
+            "url_base": "{OLLAMA_URL}",
+            "auth_key": "",
+            "auth_value": "",
+            "auth_position": "",
+            "endpoint": "/api/show",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic {OLLAMA_BASIC_AUTH_B64}",
+                "X-API-Key": "{OLLAMA_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "{model}"
+            },
+            "parse_function": ""
+        }
+    },
+    "openai": {
+        "available_models": [
+            "gpt-4o",
+            "gpt-4o-mini",
+            "o3-mini"
+        ],
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.openai.com/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENAI_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENAI_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "frequency_penalty": 0,
+                "n": 1,
+                "store": "False",
+                "max_completion_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.openai.com/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENAI_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENAI_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "groq": {
+        "available_models": [
+            "qwen/qwen3.8-27b"
+        ],
+        "run_model_example": {
+            "description": "Chat completion with tools. POST /chat/completions",
+            "url_base": "https://api.groq.com/openai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{GROQ_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {GROQ_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "tool_choice": "auto",
+                "stream": "False",
+                "max_completion_tokens": "max_tokens",
+                "top_p": 1.0,
+                "response_format": "output_format"
+            },
+            "parse_function": ""
+        },
+        "run_model": {
+            "description": "Chat completion (minimal). POST /chat/completions",
+            "url_base": "https://api.groq.com/openai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{GROQ_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {GROQ_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "qwen/qwen3.8-27b",
+                "messages": "messages"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.groq.com/openai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{GROQ_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {GROQ_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "gemini": {
+        "run_model": {
+            "description": "generateContent. POST /v1beta/models/{model}:generateContent",
+            "url_base": "https://generativelanguage.googleapis.com",
+            "auth_key": "x-goog-api-key",
+            "auth_value": "{GEMINI_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/v1beta/models/{model}:generateContent",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-goog-api-key": "{GEMINI_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "contents": "contents",
+                "tools": "tools",
+                "toolConfig": "toolConfig",
+                "safetySettings": "safetySettings",
+                "systemInstruction": "systemInstruction",
+                "generationConfig": {
+                    "thinkingConfig": {
+                        "thinkingBudget": 0
+                    },
+                    "temperature": 1.0,
+                    "topP": 0.8,
+                    "topK": 10
+                },
+                "cachedContent": "cachedContent"
+            },
+            "parse_function": ""
+        },
+        "run_model_stream": {
+            "description": "streamGenerateContent (SSE). POST /v1beta/models/{model}:streamGenerateContent?alt=sse",
+            "url_base": "https://generativelanguage.googleapis.com",
+            "auth_key": "x-goog-api-key",
+            "auth_value": "{GEMINI_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/v1beta/models/{model}:streamGenerateContent?alt=sse",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-goog-api-key": "{GEMINI_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "contents": "contents",
+                "tools": "tools",
+                "toolConfig": "toolConfig",
+                "safetySettings": "safetySettings",
+                "systemInstruction": "systemInstruction",
+                "generationConfig": {
+                    "thinkingConfig": {
+                        "thinkingBudget": 0
+                    },
+                    "temperature": 1.0,
+                    "topP": 0.8,
+                    "topK": 10
+                },
+                "cachedContent": "cachedContent"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /v1beta/models",
+            "url_base": "https://generativelanguage.googleapis.com",
+            "auth_key": "x-goog-api-key",
+            "auth_value": "{GEMINI_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/v1beta/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-goog-api-key": "{GEMINI_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        },
+        "show_model": {
+            "description": "Model details. GET /v1beta/models/{model}",
+            "url_base": "https://generativelanguage.googleapis.com",
+            "auth_key": "x-goog-api-key",
+            "auth_value": "{GEMINI_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/v1beta/models/{model}",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-goog-api-key": "{GEMINI_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "grok": {
+        "available_models": [
+            "grok-4.7"
+        ],
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.x.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{GROK_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {GROK_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "temperature": 0
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.x.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{GROK_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {GROK_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "litellm": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "{LITELLM_URL}",
+            "auth_key": "Authorization",
+            "auth_value": "{LITELLM_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LITELLM_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "frequency_penalty": 0,
+                "n": 1,
+                "store": "False",
+                "max_completion_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "{LITELLM_URL}",
+            "auth_key": "Authorization",
+            "auth_value": "{LITELLM_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LITELLM_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        },
+        "list_vector_store": {
+            "description": "List vector stores. GET /vector_store/list",
+            "url_base": "{LITELLM_URL}",
+            "auth_key": "Authorization",
+            "auth_value": "{LITELLM_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/vector_store/list",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LITELLM_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "anthropic": {
+        "available_models": [
+            "claude-opus-5-5",
+            "claude-sonnet-5-5",
+            "claude-haiku-5-5"
+        ],
+        "run_model": {
+            "description": "Messages. POST /messages",
+            "url_base": "https://api.anthropic.com/v1",
+            "auth_key": "x-api-key",
+            "auth_value": "{ANTHROPIC_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/messages",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-api-key": "{ANTHROPIC_API_KEY}",
+                "anthropic-version": "2023-06-01"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "max_tokens": "max_tokens",
+                "stream": "False",
+                "temperature": "temperature",
+                "tools": "tools",
+                "output_config": "output_format"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.anthropic.com/v1",
+            "auth_key": "x-api-key",
+            "auth_value": "{ANTHROPIC_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-api-key": "{ANTHROPIC_API_KEY}",
+                "anthropic-version": "2023-06-01"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        },
+        "show_model": {
+            "description": "Model details. GET /models/{model}",
+            "url_base": "https://api.anthropic.com/v1",
+            "auth_key": "x-api-key",
+            "auth_value": "{ANTHROPIC_API_KEY}",
+            "auth_position": "header",
+            "endpoint": "/models/{model}",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "x-api-key": "{ANTHROPIC_API_KEY}",
+                "anthropic-version": "2023-06-01"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "openrouter": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://openrouter.ai/api/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENROUTER_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENROUTER_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "max_tokens": 11024,
+                "top_p": 1,
+                "frequency_penalty": 0,
+                "presence_penalty": 0
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://openrouter.ai/api/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENROUTER_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENROUTER_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "deepseek": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.deepseek.com",
+            "auth_key": "Authorization",
+            "auth_value": "{DEEPSEEK_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {DEEPSEEK_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "tools": "tools",
+                "tool_choice": "auto",
+                "max_tokens": 1024,
+                "temperature": 1,
+                "top_p": 1,
+                "frequency_penalty": 0,
+                "presence_penalty": 0
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.deepseek.com",
+            "auth_key": "Authorization",
+            "auth_value": "{DEEPSEEK_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {DEEPSEEK_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "mistral": {
+        "available_models": [
+            "ministral-3b-latest",
+            "ministral-8b-latest",
+            "ministral-14b-latest"
+        ],
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.mistral.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{MISTRAL_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {MISTRAL_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "tools": "tools",
+                "tool_choice": "auto",
+                "parallel_tool_calls": "True",
+                "max_tokens": 1024,
+                "temperature": 1,
+                "top_p": 1,
+                "frequency_penalty": 0,
+                "presence_penalty": 0,
+                "safe_prompt": "False"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.mistral.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{MISTRAL_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {MISTRAL_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        },
+        "show_model": {
+            "description": "Model details. GET /models/{model}",
+            "url_base": "https://api.mistral.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{MISTRAL_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models/{model}",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {MISTRAL_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "openwebui": {
+        "run_model": {
+            "description": "Chat completion. POST /api/chat/completions",
+            "url_base": "{OPENWEBUI_URL}",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENWEBUI_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/api/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENWEBUI_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "max_tokens": "max_tokens",
+                "temperature": "temperature",
+                "tools": "tools",
+                "response_format": "output_format"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /api/models",
+            "url_base": "{OPENWEBUI_URL}",
+            "auth_key": "Authorization",
+            "auth_value": "{OPENWEBUI_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/api/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {OPENWEBUI_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "together": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.together.xyz/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{TOGETHER_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {TOGETHER_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.together.xyz/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{TOGETHER_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {TOGETHER_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "fireworks": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.fireworks.ai/inference/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{FIREWORKS_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {FIREWORKS_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.fireworks.ai/inference/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{FIREWORKS_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {FIREWORKS_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "cerebras": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.cerebras.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{CEREBRAS_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {CEREBRAS_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://api.cerebras.ai/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{CEREBRAS_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {CEREBRAS_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "perplexity": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://api.perplexity.ai",
+            "auth_key": "Authorization",
+            "auth_value": "{PERPLEXITY_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {PERPLEXITY_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "stream": "False",
+                "temperature": 0.2,
+                "top_p": 0.9,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        }
+    },
+    "huggingface": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "https://router.huggingface.co/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{HF_TOKEN}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {HF_TOKEN}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "https://router.huggingface.co/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{HF_TOKEN}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {HF_TOKEN}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "vllm": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "{VLLM_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{VLLM_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {VLLM_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "{VLLM_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{VLLM_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {VLLM_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "llamacpp": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "{LLAMACPP_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{LLAMACPP_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LLAMACPP_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "{LLAMACPP_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{LLAMACPP_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LLAMACPP_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    },
+    "lmstudio": {
+        "run_model": {
+            "description": "Chat completion. POST /chat/completions",
+            "url_base": "{LMSTUDIO_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{LMSTUDIO_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/chat/completions",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LMSTUDIO_API_KEY}"
+            },
+            "params": {},
+            "body": {
+                "model": "model",
+                "messages": "messages",
+                "tools": "tools",
+                "stream": "False",
+                "response_format": "output_format",
+                "temperature": 1,
+                "top_p": 1.0,
+                "max_tokens": "max_tokens"
+            },
+            "parse_function": ""
+        },
+        "list_models": {
+            "description": "List models. GET /models",
+            "url_base": "{LMSTUDIO_URL}/v1",
+            "auth_key": "Authorization",
+            "auth_value": "{LMSTUDIO_API_KEY}",
+            "auth_position": "bearer",
+            "endpoint": "/models",
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer {LMSTUDIO_API_KEY}"
+            },
+            "params": {},
+            "body": {},
+            "parse_function": ""
+        }
+    }
+}

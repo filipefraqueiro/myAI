@@ -1,0 +1,110 @@
+{
+    "MCP_INITIALIZE": {
+        "description": "Initialize an MCP client session and negotiate protocol capabilities.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "initialize",
+            "params": {
+                "protocolVersion": "2025-11-25",
+                "capabilities": {},
+                "clientInfo": {
+                    "name": "Custom MCP Client",
+                    "version": "1.0.0"
+                }
+            }
+        },
+        "parse_function": "result"
+    },
+    "MCP_LIST_TOOLS": {
+        "description": "Retrieve all tools exposed by an MCP server, including their descriptions and input schemas.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "tools/list",
+            "params": {}
+        },
+        "parse_function": "result.tools"
+    },
+    "MCP_CALL_TOOL": {
+        "description": "Execute a specific tool exposed by an MCP server.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "tools/call",
+            "params": {
+                "name": "{TOOL_NAME}",
+                "arguments": {}
+            }
+        },
+        "parse_function": "result"
+    },
+    "MCP_LIST_RESOURCES": {
+        "description": "Retrieve the list of resources exposed by an MCP server.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "resources/list",
+            "params": {}
+        },
+        "parse_function": "result.resources"
+    },
+    "MCP_READ_RESOURCE": {
+        "description": "Read the contents of a specific MCP resource using its URI.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "resources/read",
+            "params": {
+                "uri": "{RESOURCE_URI}"
+            }
+        },
+        "parse_function": "result.contents"
+    },
+    "MCP_LIST_RESOURCE_TEMPLATES": {
+        "description": "Retrieve resource templates available on an MCP server.",
+        "url_base": "{MCP_SERVER_URL}",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json, text/event-stream"
+        },
+        "body": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "resources/templates/list",
+            "params": {}
+        },
+        "parse_function": "result.resourceTemplates"
+    }
+}

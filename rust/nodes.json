@@ -1,0 +1,156 @@
+{
+    "node1": {
+        "model_provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "prompts": [],
+        "tools": {
+            "weather": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "os_execute": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "sendMessage": {
+                "path": "tools/telegram_bot.py",
+                "constant_parameters": {}
+            },
+            "getMe": {
+                "path": "tools/telegram_bot.py",
+                "constant_parameters": {}
+            },
+            "get_cpu": {
+                "path": "tools/device.py",
+                "constant_parameters": {}
+            },
+            "make_web_request": {
+                "path": "tools/device.py",
+                "constant_parameters": {}
+            }
+        },
+        "output_format": "",
+        "available_next_nodes": "",
+        "are_next_nodes_conditional": true,
+        "next_nodes_condition": "",
+        "next_nodes_parallel": false,
+        "store": true,
+        "use_store": true,
+        "human_in_the_loop": true,
+        "schedules": [
+            {
+                "prompt": "count up to 11",
+                "interval": ""
+            }
+        ]
+    },
+    "node2": {
+        "model_provider": "mistral",
+        "model": "ministral-14b-latest",
+        "prompts": [],
+        "tools": {
+            "weather": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "os_execute": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            }
+        },
+        "output_format": "",
+        "available_next_nodes": "",
+        "are_next_nodes_conditional": true,
+        "next_nodes_condition": "",
+        "next_nodes_parallel": false,
+        "store": true,
+        "use_store": true,
+        "human_in_the_loop": true,
+        "schedules": [
+            {
+                "prompt": "",
+                "interval": "1 * * * * *"
+            }
+        ]
+    },
+    "node3": {
+        "model_provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "prompts": [],
+        "tools": {
+            "weather": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "os_execute": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "copy_to_clipboard": {
+                "path": "tools/ai_tools.py"
+            }
+        },
+        "output_format": "",
+        "available_next_nodes": "",
+        "are_next_nodes_conditional": true,
+        "next_nodes_condition": "",
+        "next_nodes_parallel": false,
+        "store": true,
+        "use_store": true,
+        "human_in_the_loop": true,
+        "schedules": [
+            {
+                "prompt": "",
+                "interval": "0 */5 * * * *"
+            }
+        ]
+    },
+    "node4": {
+        "model_provider": "local",
+        "model": "ggml-model-q4_0.gguf",
+        "prompts": [],
+        "tools": {},
+        "output_format": "",
+        "available_next_nodes": "",
+        "are_next_nodes_conditional": true,
+        "next_nodes_condition": "",
+        "next_nodes_parallel": false,
+        "store": true,
+        "use_store": true,
+        "human_in_the_loop": true,
+        "schedules": [
+            {
+                "prompt": "",
+                "interval": "0 */4 * * * *"
+            }
+        ]
+    },
+    "node5": {
+        "model_provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "prompts": [],
+        "tools": {
+            "os_execute": {
+                "path": "tools/test.py",
+                "constant_parameters": {}
+            },
+            "copy_to_clipboard": {
+                "path": "tools/ai_tools.py"
+            }
+        },
+        "output_format": "",
+        "available_next_nodes": "",
+        "are_next_nodes_conditional": true,
+        "next_nodes_condition": "",
+        "next_nodes_parallel": false,
+        "store": true,
+        "use_store": true,
+        "human_in_the_loop": true,
+        "schedules": [
+            {
+                "prompt": "",
+                "interval": "0 */4 * * * *"
+            }
+        ]
+    }
+}

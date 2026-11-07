@@ -1,0 +1,455 @@
+Site, Country, Type
+unstats.un.org, World, 
+data.who.int, World, 
+who.int, World, 
+ietf.org, World, 
+rfc-editor.org, World, 
+pmi.org, World, 
+oauth.net, World, 
+iata.org, World
+mcc-mnc.com, World, 
+rust-lang.org, World, 
+doc.rust-lang.org, World, IT
+nodejs.org, World, IT
+python.org, World, IT
+developer.android.com, World, IT
+openssf.org, World, IT
+population.un.org, World, 
+bluetooth.com, World, 
+worldbank.org, World, 
+regjunnofsinhar.org, World, 
+finance.yahoo.com, World, 
+www.iana.org, World, Internet
+www.afrinic.net, Africa, Internet
+www.apnic.net, Asia, Internet
+www.arin.net, North America, Internet
+www.lacnic.net, South America, Internet
+www.ripe.net, Europe, Internet
+esa.int, Europe, Space
+business.esa.int, Europe, Space
+ideas.esa.int, Europe, Space
+eurocontrol.int, Europe, 
+ec.europa.eu, European Union, 
+data.ecb.europa.eu, European Union, 
+european-union.europa.eu, European Union, 
+www.eu.eu, European Union, 
+www.berec.europa.eu, European Union, 
+cpvo.europa.eu, European Union, 
+www.consilium.europa.eu, European Union, 
+curia.europa.eu, European Union, 
+www.copernicus.eu, European Union, Space Science
+eu-space.europa.eu, European Union, Space Science
+dataspace.copernicus.eu, European Union, Space Science
+browser.dataspace.copernicus.eu, European Union, Space Science
+sentinels.copernicus.eu, European Union, Space Science
+www.gsc-europa.eu, European Union, Space Science
+osha.europa.eu, European Union, 
+www.eulisa.europa.eu, European Union, 
+www.eba.europa.eu, European Union, 
+www.frontex.europa.eu, European Union, 
+www.ecdc.europa.eu, European Union, 
+www.cedefop.europa.eu, European Union, 
+echa.europa.eu, European Union, 
+commission.europa.eu, European Union, 
+cor.europa.eu, European Union, 
+eur-lex.europa.eu, European Union, Legal
+www.eca.europa.eu, European Union, 
+cybersecurity-centre.europa.eu, European Union, 
+edpb.europa.eu, European Union, 
+edps.europa.eu, European Union, 
+eda.europa.eu, European Union, 
+www.eesc.europa.eu, European Union, 
+www.eacea.ec.europa.eu, European Union, 
+www.eea.europa.eu, European Union, 
+www.eeas.europa.eu, European Union, 
+www.efca.europa.eu, European Union, 
+www.efsa.europa.eu, European Union, 
+www.eurofound.europa.eu, European Union, 
+www.euspa.europa.eu, European Union, 
+hadea.ec.europa.eu, European Union, 
+eismea.ec.europa.eu, European Union, 
+eige.europa.eu, European Union, 
+www.eiopa.europa.eu, European Union, 
+www.eib.org, European Union, 
+www.eif.org, European Union, 
+www.ela.europa.eu, European Union, 
+www.emsa.europa.eu, European Union, 
+www.ema.europa.eu, European Union, 
+www.euda.europa.eu, European Union, 
+www.ombudsman.europa.eu, European Union, 
+www.europarl.europa.eu, European Union, 
+eu-careers.europa.eu, European Union, 
+www.eppo.europa.eu, European Union, 
+erc.europa.eu, European Union, 
+www.esma.europa.eu, European Union, 
+www.etf.europa.eu, European Union, 
+euaa.europa.eu, European Union, 
+www.eurojust.europa.eu, European Union, 
+fra.europa.eu, European Union, 
+www.europol.europa.eu, European Union, 
+www.cepol.europa.eu, European Union, 
+next-generation-eu.europa.eu, European Union, 
+www.era.europa.eu, European Union, 
+www.euipo.europa.eu, European Union, 
+www.satcen.europa.eu, European Union, 
+www.easa.europa.eu, European Union, 
+www.ecb.europa.eu, European Union, 
+cinea.ec.europa.eu, European Union, 
+fusionforenergy.europa.eu, European Union, 
+joint-research-centre.ec.europa.eu, European Union, 
+csirtsnetwork.eu, European Union, Safety and Security
+op.europa.eu, European Union, 
+www.srb.europa.eu, European Union, 
+www.cdt.europa.eu, European Union, 
+www.clean-aviation.eu, European Union, 
+www.clean-hydrogen.europa.eu, European Union, 
+www.chips-ju.europa.eu, European Union, 
+www.cbe.europa.eu, European Union, 
+eurohpc-ju.europa.eu, European Union, 
+www.ihi.europa.eu, European Union, 
+www.sesarju.eu, European Union, 
+rail-research.europa.eu, European Union, 
+data.europa.eu, European Union, 
+www.sanctionsmap.eu, European Union, 
+www.consilium.europa.eueneuropean-council, European Union, 
+www.europeanschooluxembourg2.eu, European Union, 
+eusa.europa.eu, European Union, 
+eit.europa.eu, European Union, 
+www.mercosur.int, South America, 
+www.comunidadandina.org, South America, 
+www.unasursg.org, South America, 
+www.aladi.org, South America, 
+www.sela.org, South America, 
+www.parlatino.org, South America, 
+www.oas.org, South America, 
+otca.org, South America, 
+www.caf.com, South America, 
+www.iadb.org, South America, 
+www.fonplata.org, South America, 
+www.flar.com, South America, 
+www.prosur.org, South America, 
+www.celac.gob.sv, South America, 
+au.int, Africa, 
+www.afdb.org, Africa, 
+www.nepad.org, Africa, 
+www.afreximbank.com, Africa, 
+www.africacdc.org, Africa, 
+www.panafricanparliament.org, Africa, 
+www.achpr.au.int, Africa, 
+www.african-court.org, Africa, 
+www.aprm-au.org, Africa, 
+www.comesa.int, Africa, 
+www.eac.int, Africa, 
+www.ecowas.int, Africa, 
+ceeac-eccas.org, Africa, 
+oenb.at, Austria, Banking Financial
+nbb.be, Belgium, Banking Financial
+cnb.cz, Czech Republic, Banking Financial
+nationalbanken.dk, Denmark, Banking,  Financial
+fi.ee, Estonia, Financial
+suomenpankki.fi, Finland, Banking Financial
+banque-france.fr, France, Banking Financial
+bundesbank.de, Germany, Banking Financial
+cb.is, Iceland, Banking,  Financial
+centralbank.ie, Ireland, Banking Financial
+bancaditalia.it, Italy, Banking Financial
+fma-li.li, Liechtenstein, Financial
+bcl.lu, Luxembourg,  Banking
+mfsa.mt, Malta, Financial
+dnb.nl, Netherlands, Banking
+norges-bank.no, Norway, Banking Financial
+bportugal.pt, Portugal, Banking Financial
+bnr.ro, Romania, Banking Financial
+nbs.sk, Slovakia, Banking Financial
+bde.es, Spain, Banking Financial
+riksbank.se, Sweden,  Banking Financial
+bankingsupervision.europa.eu, European Union, Banking
+www.sadc.int, Africa, 
+igad.int, Africa, 
+cen-sad.org, Africa, 
+www.maghrebarabe.org, Africa, 
+www.cemac.int, Africa, 
+www.uemoa.int, Africa, 
+www.ohada.org, Africa, 
+www.aripo.org, Africa, 
+www.oapi.int, Africa, 
+www.ati-aca.org, Africa, 
+www.reccerafrica.org, Africa, 
+www.aac.gov.al, Albania, Airspace
+www.cyber.gov.au, Australia, Safety and Security
+www.casa.gov.au, Australia, Airspace
+www.ncc.gv.at, Austria, Safety and Security
+statbel.fgov.be, Belgium, 
+ccb.belgium.be, Belgium, Safety and Security
+www.belgium.be, Belgium, 
+www.cert.be, Belgium, 
+www.gov.br, Brazil, Gov
+egov.government.bg, Bulgaria , 
+infostat.nsi.bg, Bulgaria , 
+nsi.bg, Bulgaria , 
+bl.government.bg, Bulgaria, 
+ine.cv, Cape Verde, Statistics
+governo.cv, Cape Verde, Government
+gov.cv, Cape Verde, Government
+presidenciarepublica.cv, Cape Verde, Government
+parlamento.cv, Cape Verde, Government
+stj.cv, Cape Verde, Justice
+cne.cv, Cape Verde, Government
+incv.gov.cv, Cape Verde, Government
+maia.gov.cv, Cape Verde, Government
+mcc.gov.cv, Cape Verde, Government
+minedu.gov.cv, Cape Verde, Government
+mfids.gov.cv, Cape Verde, Government
+mf.gov.cv, Cape Verde, Government
+mne.gov.cv, Cape Verde, Government
+minsaude.gov.cv, Cape Verde, Government
+mioth.gov.cv, Cape Verde, Government
+mai.gov.cv, Cape Verde, Government
+mjt.gov.cv, Cape Verde, Government
+mar.gov.cv, Cape Verde, Government
+mtt.gov.cv, Cape Verde, Government
+policianacional.cv, Cape Verde, Safety and Security
+pj.gov.cv, Cape Verde, Safety and Security
+mai.gov.cv, Cape Verde, Safety and Security
+nks.carnet.hr, Croatia, Safety and Security
+www.gov.cy, Cyprus, 
+www.cystat.gov.cy, Cyprus
+csirt.cy, Cyprus, Safety and Security
+dsa.cy, Cyprus, Safety and Security
+ncc.cy, Cyprus, Safety and Security
+www.agenciaespacial.cl, Chile, Space Science
+www.govcert.cz, Czech Republic, Safety and Security
+www.csirt.cz, Czech Republic, Safety and Security
+nukib.gov.cz, Czech Republic, Safety and Security
+ncc-dk.dk, Denmark, Safety and Security
+www.fe-ddis.dk, Denmark, Safety and Security
+www.fmn.dk, Denmark, Safety and Security
+www.fmi.dk, Denmark, Safety and Security
+www.regnskabsstyrelsen.dk, Denmark, Safety and Security
+www.fauk.dk, Denmark, Safety and Security
+www.fe-ddis.dk, Denmark, Safety and Security
+www.hjemmevaernet.dk, Denmark, Safety and Security
+politi.dk, Denmark, Safety and Security
+anklagemyndigheden.dk, Denmark, Safety and Security
+www.forsvaret.dk, Denmark, Safety and Security
+www.ism.dk, Denmark, Health
+en.fm.dk, Denmark, Finance and Economics
+www.dst.dk, Denmark, Statistics
+www.statbank.dk, Denmark, Statistics
+onec.bcr.gob.sv, El Salvador, 
+www.ria.ee, Estonia, Safety and Security
+www.traficom.fi, Finland, Airspace
+trafi2.stat.fi, Finland, 
+tukes.fi, Finland, 
+pxdata.stat.fi, Finland, 
+www.finlex.fi, Finland, 
+tilastot.tulli.fi, Finland, 
+www.kyberturvallisuuskeskus.fi, Finland, Safety and Security
+www.viestintavirasto.fi, Finland, Safety and Security
+www.certificat-air.gouv.fr, France, Environment
+cyber.gouv.fr, France, Safety and Security
+www.cert.ssi.gouv.fr, France, Safety and Security
+www.service-public.fr, France, 
+www.ecologie.gouv.fr, France
+www.legifrance.gouv.fr, France
+www.gouvernement.fr, France
+www.data.gouv.fr, France
+www.jechangemavoiture.gouv.fr, France
+www.info.gouv.fr, France, 
+www.france.fr, France, 
+www.finanzamt-muenchen.de, Germany, Finance
+wahlergebnisse.sachsen-anhalt.de, Germany, 
+statistik.sachsen-anhalt.de, Germany, 
+www.wahlen-berlin.de, Germany, 
+www.statistik.bayern.de, Germany, 
+www.finanzamt.bayern.de, Germany, Finance
+www.dlr.de, Germany, Airspace Science
+destatis.de, Germany, 
+genesis.destatis.de, Germany, 
+en.dtvp.de, Germany, 
+www.verfassungsschutz.de, Germany, 
+www.handelsregister.de, Germany,
+www.unternehmensregister.de, Germany,
+www.polizei.bayern.de, Germany, Safety and Security
+polizei.nrw, Germany, Safety and Security
+www.polizei-bw.de, Germany, Safety and Security
+www.bmi.bund.de, Germany, 
+online.portal.bzst.de, Germany, 
+bundesfinanzministerium.de, Germany, 
+Cyber Alliance Center (CAZ) of the Bavarian Office
+www.bayern.de, Germany, 
+www.bayernportal.de, Germany, 
+www.lfv.bayern.de, Germany, 
+www.nkcs.bund.de, Germany, Safety and Security
+www.bsi.bund.de, Germany, Safety and Security
+www.bzst.de, Germany, 
+www.finanzamt-mittelfranken-west.de, German, Finance
+www.finanzamt-mittelfranken-ost.de, German, Finance
+www.finanzamt-nuernberg.de, German, Finance
+statistics.gr, Greece, Statistics
+cyber.gov.gr, Greece, Safety and Security
+www.mindigital.gr, Greece, Safety and Security
+ine.gob.hn, Honduras, Statistics
+sen.ine.gob.hn, Honduras, Statistics
+tableros-inclusion-financiera.ine.gob.hn, Honduras, 
+ncc.gov.hu, Hungary, Safety and Security
+www.ncc.is, Iceland, Safety and Security
+www.fjarskiptastofa.is, Iceland, 
+www.ncsc.gov.ie, Ireland, Safety and Security
+www.acn.gov.it, Italy, 
+www.mod.gov.lv, Latvia, Safety and Security
+cert.lv, Latvia, Safety and Security
+www.saeima.lv, Latvia, 
+titania.saeima.lv, Latvia, 
+arhivs.cvk.lv, Latvia, 
+www.nksc.lt, Lithuania, Safety and Security
+lrv.lt
+vda.lrv.lt
+osp.stat.gov.lt
+duomenys.stat.gov.lt
+www.circl.lu, Luxembourg, Safety and Security
+nc3.lu, Luxembourg, Safety and Security
+www.govcert.lu, Luxembourg, Safety and Security
+centralbankmalta.org, Malta, 
+nso.gov.mt, Malta, 
+divizjonitalgvernlokali.gov.mt, Malta, 
+artscouncilmalta.gov.mt, Malta, 
+gov.mt, Malta, 
+maltacip.gov.mt, Malta, 
+ncc-mita.gov.mt, Malta, Safety and Security
+dhm.gov.np, Nepal, 
+censusnepal.cbs.gov.np, Nepal, Statistics
+bipadportal.gov.np, Nepal, 
+navigate.dor.gov.np, Nepal, 
+www.ncsc.nl, Netherlands, Safety and Security
+www.rvo.nl, Netherlands, Safety and Security
+ind.nl, Netherlands, 
+mkd-cirt.mk, North Macedonia, Safety and Security
+ssb.no, Norway, 
+nsm.no, Norway, 
+tourism.gov.pk, Pakistan, 
+pakistan.gov.pk, Pakistan, 
+stat.gov.pl, Poland, 
+www.abw.gov.pl, Poland, 
+bip.abw.gov.pl, Poland, 
+tpcoe.gov.pl, Poland, 
+drogi.gddkia.gov.pl, Poland, 
+csirt.gov.pl, Poland, Safety and Security
+cert.pl, Poland, Safety and Security
+csirt-mon.wp.mil.pl, Poland, Safety and Security
+www.portaldasfinancas.gov.pt, Portugal, 
+ptspace.pt, Portugal, Airspace Science
+www.anac.pt, Portugal, Airspace
+eportugal.gov.pt, Portugal, 
+www.cm-vimioso.pt, Portugal, 
+ine.pt, Portugal, Statistics
+iscap.ipp.pt, Portugal, 
+ipp.pt, Portugal, 
+imt-ip.pt, Portugal, 
+stcp.pt, Portugal, 
+www.gnr.pt, Portugal, Safety and Security
+www.psp.pt, Portugal, Safety and Security
+www.policiajudiciaria.pt, Portugal, Safety and Security
+www.cncs.gov.pt, Portugal, Safety and Security
+www.ministeriopublico.pt, Portugal, 
+www.portugal.gov.pt, Portugal, Government
+metrodoporto.pt, Portugal, 
+anacom.pt, Portugal, 
+ncc.gov.ro, Romania, Safety and Security
+www.cert.ro, Romania, Safety and Security
+www.inta.es, Spain, Airspace Science
+www.hisdesat.es, Spain, Airspace Science
+www.hispasat.com, Spain, Airspace Science
+www.incibe-cert.es, Spain, Safety and Security
+www.ccn-cert.cni.es, Spain, Safety and Security
+emad.defensa.gob.es, Spain, Safety and Security
+www.politie.nl, Nederlands, Safety and Security
+www.rvo.nl, Nederlands, Safety and Security
+ins.tn, Tunisia
+www.stat.si, Slovenia, Statistics
+www.cert.si, Slovenia, 
+www.predsednica-slo.si, Slovenia, 
+www.gov.si, Slovenia, 
+www.sloveniabusiness.eu, Slovenia, 
+www.culture.si, Slovenia, 
+mirri.gov.sk, Slovakia, 
+www.csirt.sk, Slovakia, Safety and Security
+www.kyberkomunita.sk, Slovakia, 
+cybercompetence.sk, Slovakia, Safety and Security
+ine.es, Spain, Statistics
+digital.gob.es, Spain, 
+planderecuperacion.gob.es, Spain, 
+www.seguridadaerea.gob.es, Spain, Airspace
+www.defensa.gob.es, Spain, Safety and Security
+www.incibe-cert.es, Spain, Safety and Security
+www.ccn-cert.cni.es, Spain, Safety and Security
+www.ccn.cni.es, Spain, Safety and Security
+www.cni.es, Spain, Safety and Security
+www.cert.se, Sweden, Safety and Security
+www.ncc-se.se, Sweden, Safety and Security
+gov.uk, UK, 
+ncsc.gov.uk, UK, 
+cia.gov, USA, 
+nist.gov, USA, 
+nasa.gov, USA, 
+jpl.nasa.gov, USA, 
+webb.nasa.gov, USA, 
+science.nasa.gov, USA, 
+csirt.ncc.gov.ng, Nigeria, IT
+www.abae.gob.ve, Venezuela, Space Science
+www.eis.ee, Estonia, 
+www.polsa.gov.pl, Poland, 
+www.hso.hu, Hungary, 
+www.nasa.gov, USA, Airspace
+www.noaa.gov, USA, Airspace
+www.usgs.gov, USA, Airspace
+www.spaceforce.mil, USA, Airspace
+www.cnsa.gov.cn, China, Airspace
+www.gps.gov, USA, 
+www.landsat.gsfc.nasa.gov, USA, 
+www.beidou.gov.cn, China, 
+www.ibge.gov.br, Brazil, Statistics
+www.gov.br, Brazil, 
+sidra.ibge.gov.br, Brazil, 
+www.tse.jus.br, Brazil, Law
+international.tse.jus.br, Brazil, Law
+resultados.tse.jus.br, Brazil, Law
+elections.nz, New Zealand, 
+electionresults.govt.nz, New Zealand, 
+www.stats.govt.nz, New Zealand, 
+jobs.stats.govt.nz, New Zealand, 
+www.govt.nz, New Zealand, 
+nzhistory.govt.nz, New Zealand, 
+smartstart.services.govt.nz, New Zealand, 
+www.laiv-mv.de, Germany, 
+www.landtag-mv.de, Germany, 
+www.wahlen-berlin.de, Germany, 
+www.berlin.de, Germany, 
+www.statistik-berlin-brandenburg.de, Germany, 
+wahlen.mvnet.de, Germany,
+www.bundestag.de, Germany, Government
+www.cirt.gov.jm, Jamaica, Security
+opm.gov.jm, Jamaica, Government
+laws.moj.gov.jm, Jamaica, Law
+statinja.gov.jm, Jamaica, Statistics
+www.npa.go.jp, Japan, Security
+www.japaneselawtranslation.go.jp, Japan, 
+www.kantei.go.jp, Japan, Government
+www.cyber.go.jp, Japan, Security
+www.mofa.go.jp, Japan, Government
+www.soumu.go.jp, Japan, Government
+www.meti.go.jp, Japan, Government
+www.mod.go.jp, Japan, Government
+www.jpcert.or.jp, Japan, Security
+www.japaneselawtranslation.go.jp, Japan, Law
+stadt.muenchen.de, Germany, Government
+geoportal.muenchen.de, Germany, Government
+portal.cra-srp.enisa.europa.eu, European Union, Government
+www.bmftr.bund.de, Germany, Government Science Technology
+www.citius.mj.pt, Portugal, Law
+www.base.gov.pt, Portugal, Government
+www.inei.gob.pe, Peru, Statistics
+censo2017.inei.gob.pe, Peru, Statistics
+censos2025.inei.gob.pe, Peru, Statistics
+www.gob.pe, Peru, Government
+www.sbs.gob.pe, Peru, Government
